@@ -27,12 +27,14 @@
       <% for(let i = 0; i < items.length; i++){ %>
         
       <div class="item-card">
-        <img src="..." />
-        <h3>...</h3>
-        <p>$...</p>
-        <a href="...">More info</a>
+        <img src="<%=items[i].imageUrl%>" />
+        <h3><%=items[i].name%></h3>
+        <p>$<%=items[i].cost%></p>
+        <a href="<%=items[i].path%>">More info</a>
       </div>
    <% } %>
     </div>
   </body>
 </html>
+
+

@@ -97,7 +97,7 @@ app.get("/mens", (request, response) => {
 // Task 5: Set up the route handler for /item/0 which sends back the first item in product.ejs
 
 app.get("/item/0", (request, response)=> {
-  response.render("product.ejs")
+  response.render("product.ejs", inventory[0].items[0])
 })
 
 
